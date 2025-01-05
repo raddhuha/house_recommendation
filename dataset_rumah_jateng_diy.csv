@@ -1,0 +1,501 @@
+id,jumlah_kamar_tidur,jumlah_kamar_mandi,jumlah_lantai,luas_lahan,luas_bangunan,harga,lokasi_sekitar,lokasi_rumah,fasilitas_sekitar,label_bintang
+1,4,1,2,232,372,2886014529,Pinggiran,Purwokerto,Dekat tempat ibadah,4
+2,1,2,1,263,115,3051246429,Perkotaan,Klaten,Dekat transportasi umum,1
+3,6,4,2,433,315,951115723,Pinggiran,Pekalongan,Dekat pasar,3
+4,6,2,1,66,93,4325012456,Pinggiran,Klaten,Dekat rumah sakit,2
+5,3,1,3,142,116,4312599294,Pedesaan,Purwokerto,Dekat pasar,5
+6,2,1,1,198,140,4085003297,Pedesaan,Surakarta,Dekat pasar,3
+7,2,1,3,100,320,4848614289,Pinggiran,Bantul,Dekat rumah sakit,1
+8,6,3,1,403,301,1372602187,Pedesaan,Sleman,Akses jalan lebar,3
+9,5,1,1,86,277,3803937687,Pedesaan,Purwokerto,Dekat pasar,3
+10,4,2,1,203,163,4719478212,Pedesaan,Pekalongan,Dekat tempat ibadah,4
+11,6,2,1,491,119,4082811134,Perkotaan,Semarang,Dekat rumah sakit,4
+12,1,3,2,129,369,1695131997,Pinggiran,Kudus,Akses jalan lebar,2
+13,6,3,3,475,302,2043972352,Pinggiran,Wonosobo,Dekat tempat ibadah,1
+14,1,3,3,368,69,1160118071,Perkotaan,Bantul,Dekat transportasi umum,5
+15,1,4,1,140,222,802833089,Perkotaan,Klaten,Dekat tempat ibadah,5
+16,3,2,1,385,248,3997999113,Pinggiran,Kudus,Dekat transportasi umum,3
+17,6,3,3,119,240,3335956762,Pedesaan,Sleman,Dekat pasar,4
+18,2,4,2,237,356,3386477324,Pinggiran,Yogyakarta,Dekat pasar,5
+19,2,3,3,359,197,241566222,Perkotaan,Magelang,Dekat pasar,2
+20,6,2,3,276,245,3356424369,Pinggiran,Pekalongan,Akses jalan lebar,5
+21,3,2,3,257,186,1070033145,Pinggiran,Wonosobo,Dekat transportasi umum,2
+22,6,4,3,82,271,475256582,Perkotaan,Magelang,Dekat pasar,1
+23,4,4,3,50,374,4370244767,Pinggiran,Wonosobo,Akses jalan lebar,2
+24,4,4,3,380,157,3281494301,Perkotaan,Kudus,Dekat tempat ibadah,2
+25,2,3,2,216,167,117470580,Pedesaan,Yogyakarta,Akses jalan lebar,5
+26,1,4,1,470,373,4137228419,Pinggiran,Magelang,Dekat rumah sakit,2
+27,2,2,2,167,204,2989856026,Perkotaan,Wonosobo,Dekat rumah sakit,2
+28,5,3,2,328,399,1632238347,Pinggiran,Yogyakarta,Dekat pasar,1
+29,3,2,3,495,299,3896023700,Perkotaan,Magelang,Dekat rumah sakit,5
+30,5,1,2,283,132,2857713404,Pedesaan,Surakarta,Dekat pasar,2
+31,5,1,1,441,187,3446263288,Pedesaan,Klaten,Dekat rumah sakit,5
+32,4,4,2,254,348,4805270977,Pedesaan,Kudus,Dekat pasar,3
+33,2,3,2,111,318,659910913,Pedesaan,Tegal,Dekat pasar,2
+34,1,4,2,398,94,4694331244,Pedesaan,Surakarta,Akses jalan lebar,3
+35,2,3,2,288,72,2399215513,Pinggiran,Purwokerto,Dekat pasar,5
+36,6,2,2,229,247,2839300299,Pedesaan,Bantul,Dekat tempat ibadah,5
+37,2,1,2,301,204,1748511082,Perkotaan,Kudus,Dekat transportasi umum,5
+38,1,4,2,183,140,3983139435,Pinggiran,Purwokerto,Dekat rumah sakit,1
+39,1,1,3,84,279,3331526787,Pinggiran,Kudus,Dekat tempat ibadah,5
+40,3,3,2,372,262,1823543253,Pedesaan,Pekalongan,Akses jalan lebar,3
+41,2,4,3,174,171,450201347,Pinggiran,Surakarta,Akses jalan lebar,4
+42,4,4,2,179,50,4128600248,Perkotaan,Bantul,Dekat rumah sakit,5
+43,1,2,1,119,298,4610407693,Pinggiran,Wonosobo,Dekat tempat ibadah,4
+44,3,1,1,439,264,2389292357,Pinggiran,Klaten,Dekat pasar,1
+45,5,4,2,227,286,2273925702,Pinggiran,Purwokerto,Akses jalan lebar,4
+46,6,2,3,256,101,4017237291,Perkotaan,Purwokerto,Dekat pasar,2
+47,4,4,1,333,203,3915649373,Pedesaan,Pekalongan,Dekat tempat ibadah,1
+48,1,3,2,85,65,718141083,Pinggiran,Magelang,Dekat rumah sakit,2
+49,5,4,1,153,304,3122153136,Pinggiran,Bantul,Dekat rumah sakit,2
+50,2,2,2,231,187,1565605398,Perkotaan,Tegal,Dekat tempat ibadah,1
+51,1,4,3,222,89,3235536108,Pedesaan,Klaten,Dekat tempat ibadah,3
+52,3,3,2,263,205,2034976918,Pinggiran,Bantul,Dekat transportasi umum,5
+53,1,1,2,494,251,2239370583,Perkotaan,Bantul,Akses jalan lebar,5
+54,1,1,2,208,267,2233581692,Pinggiran,Kudus,Dekat transportasi umum,4
+55,6,2,2,69,250,587700554,Pedesaan,Bantul,Akses jalan lebar,3
+56,1,1,3,114,276,4441423053,Pedesaan,Magelang,Dekat rumah sakit,5
+57,4,4,3,232,287,3633044613,Pedesaan,Wonosobo,Dekat tempat ibadah,4
+58,5,4,2,446,181,3668066264,Pinggiran,Wonosobo,Akses jalan lebar,1
+59,6,1,1,452,209,2062664908,Pinggiran,Sleman,Dekat transportasi umum,1
+60,1,3,1,429,227,1614540785,Pedesaan,Pekalongan,Dekat pasar,4
+61,6,3,3,358,152,2264699090,Pinggiran,Pekalongan,Dekat rumah sakit,5
+62,4,2,2,84,166,1262351834,Pinggiran,Yogyakarta,Dekat rumah sakit,5
+63,5,2,3,384,232,3767397850,Pedesaan,Pekalongan,Dekat transportasi umum,1
+64,3,2,2,450,92,369137891,Pinggiran,Wonosobo,Dekat tempat ibadah,5
+65,5,1,2,134,388,4003877407,Pinggiran,Klaten,Dekat transportasi umum,3
+66,1,3,2,201,366,1919837837,Pedesaan,Surakarta,Dekat transportasi umum,5
+67,2,2,2,495,258,261630878,Pedesaan,Yogyakarta,Dekat transportasi umum,5
+68,3,2,2,274,257,494145112,Perkotaan,Wonosobo,Akses jalan lebar,2
+69,2,3,1,133,233,4597396448,Pedesaan,Yogyakarta,Akses jalan lebar,4
+70,2,1,1,129,397,1585425011,Perkotaan,Semarang,Dekat rumah sakit,4
+71,5,1,1,265,396,2673452792,Pedesaan,Wonosobo,Dekat tempat ibadah,4
+72,1,2,3,415,141,3704554477,Pedesaan,Tegal,Akses jalan lebar,4
+73,2,3,2,322,265,2589551783,Pedesaan,Yogyakarta,Dekat rumah sakit,4
+74,6,1,2,464,263,4789356150,Pinggiran,Tegal,Dekat rumah sakit,3
+75,4,3,2,427,252,3686884165,Pinggiran,Sleman,Dekat rumah sakit,1
+76,4,3,3,131,169,4930081212,Pinggiran,Purwokerto,Dekat transportasi umum,5
+77,6,4,2,495,362,1347561585,Pinggiran,Surakarta,Dekat pasar,5
+78,6,3,2,483,136,2505343788,Perkotaan,Kudus,Dekat rumah sakit,5
+79,6,4,2,270,59,3216712221,Perkotaan,Surakarta,Dekat rumah sakit,2
+80,6,3,3,166,103,4526384456,Pedesaan,Klaten,Dekat transportasi umum,5
+81,3,2,2,250,312,139571020,Pinggiran,Bantul,Dekat rumah sakit,4
+82,5,2,2,105,270,1198916050,Pedesaan,Yogyakarta,Dekat transportasi umum,1
+83,3,1,3,335,185,349176465,Perkotaan,Kudus,Dekat transportasi umum,2
+84,4,2,3,281,202,2710900358,Perkotaan,Pekalongan,Dekat pasar,5
+85,2,1,1,126,74,449365456,Pinggiran,Tegal,Dekat tempat ibadah,3
+86,6,2,2,312,177,496477605,Pinggiran,Wonosobo,Akses jalan lebar,5
+87,5,1,2,288,297,1623438211,Pinggiran,Wonosobo,Dekat tempat ibadah,3
+88,5,3,1,373,298,365872537,Pedesaan,Surakarta,Dekat rumah sakit,5
+89,5,4,1,120,129,310147948,Perkotaan,Kudus,Dekat transportasi umum,4
+90,4,4,3,467,348,2271004908,Pedesaan,Klaten,Dekat tempat ibadah,2
+91,1,3,3,54,235,415121773,Pedesaan,Surakarta,Dekat pasar,4
+92,5,3,1,111,393,1484129587,Pedesaan,Tegal,Dekat tempat ibadah,3
+93,4,2,3,396,201,3647748121,Perkotaan,Kudus,Dekat transportasi umum,4
+94,1,1,1,386,231,3585203999,Pedesaan,Wonosobo,Dekat pasar,2
+95,6,2,3,52,65,4954627956,Pinggiran,Yogyakarta,Dekat rumah sakit,3
+96,5,1,2,216,398,2396292351,Pinggiran,Magelang,Dekat pasar,2
+97,4,2,3,184,186,4752673906,Pinggiran,Klaten,Dekat tempat ibadah,2
+98,5,2,2,278,73,1741668072,Pinggiran,Sleman,Dekat transportasi umum,2
+99,3,1,2,50,101,630634097,Perkotaan,Purwokerto,Dekat rumah sakit,3
+100,5,2,2,339,278,192722600,Pedesaan,Yogyakarta,Dekat transportasi umum,3
+101,5,4,2,214,284,4910083046,Perkotaan,Wonosobo,Dekat transportasi umum,1
+102,3,2,3,361,342,1925040931,Pedesaan,Bantul,Dekat transportasi umum,2
+103,5,1,3,466,328,1757602334,Pinggiran,Semarang,Dekat rumah sakit,4
+104,5,1,3,161,63,2775131248,Pinggiran,Klaten,Akses jalan lebar,1
+105,5,3,1,65,228,2382953715,Pedesaan,Pekalongan,Dekat transportasi umum,5
+106,3,2,1,380,128,2431848041,Pedesaan,Tegal,Dekat tempat ibadah,5
+107,5,1,2,356,285,2749329143,Perkotaan,Surakarta,Dekat tempat ibadah,2
+108,6,1,3,189,296,357787134,Perkotaan,Magelang,Dekat rumah sakit,1
+109,2,1,2,441,217,307443529,Perkotaan,Surakarta,Dekat rumah sakit,5
+110,3,3,2,163,67,3457171330,Pinggiran,Tegal,Dekat pasar,1
+111,1,4,2,307,125,827509934,Perkotaan,Kudus,Dekat transportasi umum,4
+112,3,2,2,392,350,631604220,Pinggiran,Sleman,Dekat rumah sakit,1
+113,5,4,1,250,244,3141799947,Pinggiran,Wonosobo,Dekat rumah sakit,4
+114,1,4,2,468,168,3514345637,Perkotaan,Tegal,Dekat rumah sakit,4
+115,2,2,1,235,117,3492908857,Perkotaan,Yogyakarta,Dekat transportasi umum,2
+116,3,3,2,207,311,3902505886,Perkotaan,Magelang,Dekat pasar,2
+117,6,4,2,55,130,378079780,Pedesaan,Semarang,Dekat transportasi umum,4
+118,3,3,2,79,245,4702962441,Pedesaan,Klaten,Dekat pasar,1
+119,6,1,1,315,367,3269206135,Pinggiran,Bantul,Dekat rumah sakit,2
+120,5,2,3,438,135,357625709,Pedesaan,Surakarta,Dekat transportasi umum,1
+121,1,3,1,272,200,2134355252,Pinggiran,Pekalongan,Dekat pasar,1
+122,6,2,1,388,332,4756129322,Pinggiran,Wonosobo,Dekat rumah sakit,2
+123,4,1,3,476,346,1655480883,Pedesaan,Bantul,Dekat pasar,1
+124,2,2,2,146,146,4242759664,Pedesaan,Surakarta,Dekat tempat ibadah,1
+125,3,1,2,250,208,4700440551,Perkotaan,Kudus,Dekat transportasi umum,1
+126,6,1,2,295,322,2667599292,Pedesaan,Sleman,Dekat tempat ibadah,3
+127,5,4,1,333,341,1935066736,Pinggiran,Surakarta,Akses jalan lebar,5
+128,3,3,3,218,231,4454747568,Pinggiran,Surakarta,Dekat rumah sakit,1
+129,1,3,1,175,328,2109031948,Pedesaan,Magelang,Dekat pasar,4
+130,3,2,3,490,107,3719976306,Pinggiran,Pekalongan,Dekat transportasi umum,4
+131,6,2,1,163,83,1405000910,Pedesaan,Magelang,Dekat rumah sakit,3
+132,4,2,2,439,236,2469567929,Pedesaan,Semarang,Akses jalan lebar,5
+133,1,2,1,325,338,2665828886,Pedesaan,Sleman,Dekat pasar,1
+134,3,1,1,368,339,897780220,Pedesaan,Tegal,Dekat transportasi umum,4
+135,6,1,1,284,66,2929980296,Pedesaan,Bantul,Dekat pasar,1
+136,5,2,3,334,155,863911519,Perkotaan,Sleman,Dekat pasar,1
+137,2,3,2,219,76,637458911,Perkotaan,Surakarta,Dekat transportasi umum,1
+138,1,3,3,474,337,4620597954,Perkotaan,Semarang,Akses jalan lebar,4
+139,4,3,1,341,84,4727687714,Perkotaan,Wonosobo,Dekat rumah sakit,1
+140,5,2,3,141,207,3880547896,Pinggiran,Yogyakarta,Dekat tempat ibadah,5
+141,2,1,1,261,99,660507997,Perkotaan,Semarang,Dekat pasar,3
+142,3,4,3,452,58,4081159769,Pinggiran,Klaten,Dekat transportasi umum,3
+143,1,3,2,494,150,3447772398,Pinggiran,Surakarta,Akses jalan lebar,4
+144,4,2,2,498,219,2941632407,Perkotaan,Yogyakarta,Akses jalan lebar,1
+145,3,3,1,233,352,4991449045,Pedesaan,Wonosobo,Dekat rumah sakit,3
+146,3,1,2,449,215,1146462950,Pedesaan,Yogyakarta,Dekat transportasi umum,3
+147,3,4,1,131,101,2318115594,Pinggiran,Semarang,Dekat tempat ibadah,3
+148,3,2,3,76,391,4048287271,Pinggiran,Tegal,Dekat pasar,1
+149,4,4,3,117,118,2877858223,Perkotaan,Sleman,Dekat rumah sakit,4
+150,2,3,3,99,192,2765083925,Pinggiran,Semarang,Akses jalan lebar,5
+151,1,4,3,418,344,2489764463,Pinggiran,Yogyakarta,Dekat transportasi umum,5
+152,3,1,3,384,306,2023634061,Pedesaan,Klaten,Dekat rumah sakit,3
+153,4,3,2,70,248,4279104014,Pinggiran,Bantul,Dekat pasar,4
+154,1,3,3,153,88,1092627746,Pinggiran,Surakarta,Dekat rumah sakit,5
+155,1,3,2,347,181,2321600681,Perkotaan,Magelang,Dekat tempat ibadah,3
+156,3,4,1,475,393,2360600338,Pedesaan,Surakarta,Dekat pasar,5
+157,4,2,3,406,305,2021913206,Pinggiran,Wonosobo,Dekat transportasi umum,4
+158,3,4,1,180,273,1746205499,Pinggiran,Semarang,Dekat pasar,4
+159,2,4,2,348,237,466744603,Pedesaan,Magelang,Dekat transportasi umum,5
+160,2,1,2,97,173,3610405944,Pinggiran,Kudus,Dekat pasar,4
+161,4,2,1,477,395,3400773186,Pedesaan,Magelang,Dekat tempat ibadah,5
+162,4,4,3,488,78,4311614695,Pinggiran,Purwokerto,Akses jalan lebar,5
+163,3,4,3,174,229,4409749186,Pedesaan,Magelang,Dekat tempat ibadah,1
+164,2,4,3,223,214,376791185,Pedesaan,Klaten,Dekat tempat ibadah,1
+165,1,4,1,57,141,3195768599,Pinggiran,Pekalongan,Dekat tempat ibadah,2
+166,2,3,3,410,349,4131039099,Pedesaan,Pekalongan,Dekat tempat ibadah,1
+167,3,1,1,98,319,2221411927,Pinggiran,Bantul,Akses jalan lebar,3
+168,3,3,2,204,80,875773823,Pedesaan,Wonosobo,Dekat pasar,4
+169,5,1,2,257,212,4854156451,Perkotaan,Pekalongan,Akses jalan lebar,5
+170,1,1,3,85,57,1799026269,Pedesaan,Sleman,Dekat transportasi umum,4
+171,2,1,3,89,337,4915059765,Pedesaan,Klaten,Dekat pasar,1
+172,5,1,1,333,72,4398898275,Pinggiran,Yogyakarta,Dekat pasar,4
+173,5,4,3,266,204,1803108227,Pinggiran,Yogyakarta,Dekat pasar,4
+174,4,4,1,305,161,1918138841,Pedesaan,Sleman,Dekat rumah sakit,1
+175,3,2,3,133,336,3845000890,Pinggiran,Tegal,Dekat tempat ibadah,2
+176,6,2,1,255,187,3686214029,Pedesaan,Pekalongan,Dekat rumah sakit,5
+177,2,4,1,303,230,228845345,Pedesaan,Kudus,Dekat rumah sakit,1
+178,5,2,1,449,202,833944984,Perkotaan,Yogyakarta,Akses jalan lebar,3
+179,1,1,3,241,297,3157317115,Pinggiran,Klaten,Dekat transportasi umum,2
+180,1,4,1,346,172,1146355208,Pinggiran,Kudus,Akses jalan lebar,4
+181,6,1,1,268,73,4343893738,Perkotaan,Sleman,Akses jalan lebar,1
+182,6,2,1,259,269,1367181175,Pedesaan,Surakarta,Akses jalan lebar,5
+183,5,4,2,468,187,239350401,Pinggiran,Wonosobo,Akses jalan lebar,4
+184,4,2,2,235,157,4520064528,Pedesaan,Klaten,Dekat pasar,5
+185,4,2,3,130,195,2893133649,Perkotaan,Tegal,Dekat rumah sakit,1
+186,2,2,2,170,309,152937045,Pinggiran,Surakarta,Dekat rumah sakit,1
+187,5,4,2,400,375,3245341064,Pedesaan,Magelang,Dekat pasar,4
+188,5,3,2,71,163,4052713364,Pinggiran,Sleman,Dekat rumah sakit,5
+189,2,3,2,294,338,1567110334,Pinggiran,Wonosobo,Dekat rumah sakit,2
+190,1,4,1,355,384,945824265,Perkotaan,Bantul,Akses jalan lebar,5
+191,1,1,1,272,52,2207594780,Pedesaan,Magelang,Dekat tempat ibadah,4
+192,4,4,2,397,219,1374320478,Perkotaan,Kudus,Dekat pasar,1
+193,4,3,3,390,191,116110879,Pinggiran,Magelang,Dekat transportasi umum,3
+194,5,1,2,358,382,1604621588,Pedesaan,Bantul,Dekat pasar,2
+195,3,1,3,61,154,4389230872,Pedesaan,Pekalongan,Dekat pasar,5
+196,5,3,3,452,162,782346424,Perkotaan,Pekalongan,Dekat transportasi umum,5
+197,1,3,1,191,183,2714713602,Pinggiran,Yogyakarta,Dekat rumah sakit,3
+198,6,2,1,154,109,4277990319,Pinggiran,Semarang,Akses jalan lebar,4
+199,3,4,1,240,86,3641652661,Pedesaan,Purwokerto,Dekat tempat ibadah,5
+200,1,3,1,388,333,853992183,Pinggiran,Pekalongan,Dekat pasar,5
+201,6,2,3,341,141,930835374,Pinggiran,Tegal,Dekat pasar,1
+202,4,3,2,499,178,1311773984,Perkotaan,Wonosobo,Dekat rumah sakit,1
+203,2,2,3,408,326,422287742,Perkotaan,Semarang,Dekat tempat ibadah,5
+204,5,1,3,271,281,805954496,Pedesaan,Surakarta,Dekat transportasi umum,1
+205,6,4,3,439,379,4857969302,Pedesaan,Bantul,Dekat tempat ibadah,5
+206,4,3,2,220,379,1915019802,Pedesaan,Purwokerto,Akses jalan lebar,3
+207,5,4,3,285,347,1107867569,Pedesaan,Surakarta,Akses jalan lebar,4
+208,6,1,1,490,247,3687673090,Pinggiran,Pekalongan,Dekat transportasi umum,1
+209,2,4,3,321,351,1877610749,Pedesaan,Tegal,Akses jalan lebar,5
+210,2,3,1,500,161,823230316,Pinggiran,Bantul,Dekat pasar,2
+211,5,1,1,189,186,2482672302,Pedesaan,Wonosobo,Dekat tempat ibadah,2
+212,5,3,1,102,323,2789827239,Pinggiran,Tegal,Dekat tempat ibadah,5
+213,3,3,1,88,377,1221356710,Pedesaan,Klaten,Dekat rumah sakit,1
+214,5,1,1,433,60,3058618866,Pinggiran,Surakarta,Dekat pasar,3
+215,2,3,2,316,220,2747537541,Perkotaan,Sleman,Dekat transportasi umum,2
+216,5,1,2,435,174,2764018607,Perkotaan,Sleman,Dekat pasar,5
+217,5,4,1,235,273,1867043273,Pinggiran,Purwokerto,Dekat rumah sakit,4
+218,5,1,1,81,99,1791426240,Perkotaan,Magelang,Dekat pasar,5
+219,5,2,1,415,57,1932101021,Pedesaan,Surakarta,Dekat pasar,5
+220,1,3,3,404,263,314662280,Perkotaan,Bantul,Dekat tempat ibadah,5
+221,2,3,1,304,180,998414190,Perkotaan,Bantul,Dekat transportasi umum,5
+222,4,4,1,316,361,1747191371,Perkotaan,Purwokerto,Dekat rumah sakit,5
+223,4,2,2,252,239,4439629185,Pedesaan,Klaten,Akses jalan lebar,4
+224,1,3,3,358,375,435997788,Pedesaan,Pekalongan,Akses jalan lebar,1
+225,3,3,3,337,200,2356470763,Perkotaan,Semarang,Dekat pasar,3
+226,1,1,2,384,364,1793604302,Perkotaan,Sleman,Dekat rumah sakit,5
+227,4,3,3,67,238,3405892145,Pedesaan,Kudus,Dekat transportasi umum,4
+228,6,3,2,64,393,2566305620,Pinggiran,Wonosobo,Dekat rumah sakit,2
+229,2,4,3,411,226,956240934,Perkotaan,Surakarta,Dekat rumah sakit,3
+230,6,3,2,420,372,1007565121,Perkotaan,Klaten,Dekat rumah sakit,3
+231,6,1,2,182,289,1686948741,Pedesaan,Surakarta,Dekat pasar,3
+232,3,1,3,429,355,3895811160,Perkotaan,Magelang,Dekat rumah sakit,4
+233,3,2,1,437,224,1675113528,Pedesaan,Pekalongan,Dekat tempat ibadah,4
+234,3,1,3,243,318,4090002777,Pinggiran,Purwokerto,Dekat pasar,4
+235,6,1,2,500,253,1826018733,Pinggiran,Klaten,Dekat transportasi umum,4
+236,6,4,2,284,211,4464396404,Perkotaan,Purwokerto,Dekat rumah sakit,5
+237,1,1,2,252,165,4202398105,Perkotaan,Yogyakarta,Dekat rumah sakit,2
+238,5,3,1,370,77,1878137474,Perkotaan,Purwokerto,Dekat rumah sakit,1
+239,6,4,3,288,379,2094498569,Perkotaan,Klaten,Akses jalan lebar,1
+240,2,3,2,217,244,762861704,Pinggiran,Surakarta,Dekat pasar,5
+241,6,3,2,55,303,4377262428,Pinggiran,Yogyakarta,Akses jalan lebar,5
+242,3,1,3,432,213,4613662124,Pedesaan,Klaten,Dekat pasar,5
+243,3,2,3,306,385,2509511872,Perkotaan,Pekalongan,Dekat rumah sakit,2
+244,1,3,3,156,147,3068587733,Pinggiran,Sleman,Dekat transportasi umum,5
+245,3,2,2,333,304,3740822792,Perkotaan,Tegal,Akses jalan lebar,4
+246,2,2,2,415,111,393098913,Perkotaan,Magelang,Dekat transportasi umum,4
+247,4,2,3,101,250,846061981,Pinggiran,Sleman,Dekat rumah sakit,2
+248,6,4,3,308,264,2860303747,Perkotaan,Purwokerto,Dekat tempat ibadah,1
+249,5,1,1,298,388,961051386,Pedesaan,Sleman,Dekat tempat ibadah,2
+250,4,2,3,108,259,625101911,Pedesaan,Semarang,Akses jalan lebar,5
+251,4,1,3,438,125,4008361106,Pinggiran,Pekalongan,Dekat pasar,2
+252,1,4,1,398,385,2777812595,Perkotaan,Kudus,Akses jalan lebar,3
+253,1,2,2,355,156,3199608578,Pinggiran,Yogyakarta,Dekat transportasi umum,5
+254,4,4,3,51,243,1992613054,Pinggiran,Klaten,Dekat tempat ibadah,1
+255,5,2,2,448,392,3469637920,Perkotaan,Tegal,Dekat tempat ibadah,3
+256,4,3,2,349,161,3233205905,Perkotaan,Sleman,Dekat transportasi umum,3
+257,2,4,3,231,384,426145689,Perkotaan,Wonosobo,Dekat tempat ibadah,3
+258,3,1,2,455,99,3312300107,Pedesaan,Surakarta,Akses jalan lebar,5
+259,2,3,1,226,132,4736680853,Pedesaan,Yogyakarta,Dekat tempat ibadah,4
+260,1,4,2,260,180,3577634302,Pedesaan,Pekalongan,Dekat tempat ibadah,5
+261,6,4,3,107,395,2629879245,Pinggiran,Magelang,Dekat tempat ibadah,1
+262,1,4,1,208,117,4253432425,Pinggiran,Yogyakarta,Dekat pasar,1
+263,3,3,1,137,81,803205390,Pedesaan,Bantul,Dekat transportasi umum,2
+264,5,3,3,474,56,2172066375,Pinggiran,Magelang,Dekat tempat ibadah,1
+265,1,4,2,461,225,4314502320,Pedesaan,Tegal,Dekat transportasi umum,4
+266,5,1,3,314,364,2044141205,Pedesaan,Semarang,Dekat tempat ibadah,4
+267,1,4,1,364,60,2031973474,Pinggiran,Magelang,Dekat transportasi umum,3
+268,5,4,3,338,362,1791650206,Pinggiran,Yogyakarta,Dekat pasar,5
+269,4,2,2,153,244,429992056,Pedesaan,Magelang,Dekat transportasi umum,5
+270,6,2,1,285,119,405359054,Perkotaan,Yogyakarta,Dekat pasar,1
+271,4,1,3,312,334,4082674105,Pedesaan,Purwokerto,Dekat pasar,1
+272,1,1,3,105,53,4002119132,Perkotaan,Surakarta,Dekat transportasi umum,4
+273,1,2,3,471,397,4772011749,Perkotaan,Pekalongan,Dekat transportasi umum,2
+274,1,4,3,121,254,713766067,Pinggiran,Purwokerto,Dekat tempat ibadah,4
+275,4,3,3,133,324,306248393,Pedesaan,Bantul,Dekat transportasi umum,2
+276,6,4,1,81,234,4411740835,Pinggiran,Bantul,Dekat transportasi umum,1
+277,5,1,1,355,141,3407153131,Perkotaan,Klaten,Dekat transportasi umum,2
+278,2,1,3,441,323,1118585261,Perkotaan,Kudus,Akses jalan lebar,3
+279,6,2,2,63,305,1798215393,Pedesaan,Purwokerto,Dekat pasar,3
+280,4,2,3,85,65,1437078368,Pinggiran,Bantul,Dekat rumah sakit,5
+281,6,2,3,72,244,2460482937,Pinggiran,Kudus,Dekat tempat ibadah,5
+282,3,2,3,158,355,3236206243,Pedesaan,Surakarta,Dekat tempat ibadah,1
+283,3,2,1,65,147,4789573596,Pedesaan,Pekalongan,Akses jalan lebar,1
+284,6,4,1,458,329,3414453881,Pedesaan,Purwokerto,Dekat transportasi umum,3
+285,5,2,1,154,103,1116236376,Pinggiran,Surakarta,Akses jalan lebar,4
+286,5,2,3,367,276,3991402935,Perkotaan,Magelang,Akses jalan lebar,3
+287,1,2,1,71,350,1803775894,Perkotaan,Klaten,Dekat transportasi umum,4
+288,5,3,1,288,290,1481513341,Perkotaan,Yogyakarta,Dekat transportasi umum,2
+289,2,1,1,324,325,2585501961,Pinggiran,Pekalongan,Dekat tempat ibadah,4
+290,2,4,2,222,343,528542983,Perkotaan,Tegal,Dekat rumah sakit,1
+291,4,2,3,69,282,4147852437,Pedesaan,Bantul,Dekat rumah sakit,2
+292,3,1,3,132,163,933265074,Pinggiran,Surakarta,Dekat pasar,5
+293,3,2,1,114,102,801831061,Pedesaan,Semarang,Dekat tempat ibadah,4
+294,2,3,1,247,389,4516567482,Pinggiran,Tegal,Dekat tempat ibadah,5
+295,5,4,1,326,400,3929773142,Pedesaan,Magelang,Dekat transportasi umum,2
+296,5,2,3,174,333,3868161580,Pedesaan,Semarang,Dekat rumah sakit,4
+297,2,3,3,426,124,1146789613,Perkotaan,Sleman,Akses jalan lebar,2
+298,2,1,1,382,123,4026188214,Pinggiran,Purwokerto,Akses jalan lebar,1
+299,3,3,3,431,130,3188226451,Pinggiran,Sleman,Dekat rumah sakit,1
+300,4,4,1,256,219,3650983345,Pedesaan,Purwokerto,Dekat transportasi umum,2
+301,5,2,3,376,119,2085738298,Pedesaan,Klaten,Akses jalan lebar,3
+302,3,4,1,359,320,4666593787,Pinggiran,Sleman,Dekat transportasi umum,2
+303,2,4,3,243,234,3767042776,Perkotaan,Tegal,Dekat pasar,1
+304,6,4,1,419,287,2782180460,Pedesaan,Klaten,Dekat tempat ibadah,2
+305,2,3,3,144,87,655719610,Pinggiran,Bantul,Dekat pasar,5
+306,2,2,3,70,387,3014698264,Pedesaan,Surakarta,Dekat transportasi umum,2
+307,5,2,2,175,223,1578344775,Perkotaan,Magelang,Dekat tempat ibadah,1
+308,2,4,1,384,360,304197780,Pinggiran,Yogyakarta,Akses jalan lebar,1
+309,3,1,2,226,330,3573515526,Pedesaan,Pekalongan,Dekat transportasi umum,5
+310,5,1,2,418,106,3676601770,Perkotaan,Surakarta,Akses jalan lebar,5
+311,2,2,2,196,68,3294716132,Pedesaan,Klaten,Dekat pasar,1
+312,1,1,1,60,128,1961622419,Pinggiran,Tegal,Dekat pasar,1
+313,2,4,1,62,200,3282925150,Pinggiran,Bantul,Dekat tempat ibadah,1
+314,4,2,1,440,377,1243853646,Pedesaan,Semarang,Akses jalan lebar,2
+315,2,4,2,379,150,200545210,Pinggiran,Tegal,Dekat rumah sakit,5
+316,3,2,3,332,337,1089357607,Pedesaan,Klaten,Dekat tempat ibadah,4
+317,3,3,2,376,61,1908830510,Perkotaan,Sleman,Dekat tempat ibadah,5
+318,6,3,3,138,127,3243172398,Pedesaan,Purwokerto,Dekat tempat ibadah,4
+319,6,3,1,487,283,4943638618,Pinggiran,Tegal,Dekat pasar,2
+320,3,4,3,157,313,4061454179,Pinggiran,Sleman,Dekat pasar,4
+321,4,2,3,135,177,1933962482,Pinggiran,Tegal,Dekat rumah sakit,4
+322,3,4,3,249,121,4457217413,Perkotaan,Semarang,Dekat tempat ibadah,4
+323,6,2,2,466,302,3372697977,Pinggiran,Pekalongan,Dekat transportasi umum,1
+324,3,2,3,92,173,1908469208,Pinggiran,Bantul,Dekat rumah sakit,3
+325,5,2,3,332,93,851198156,Pedesaan,Kudus,Dekat tempat ibadah,2
+326,3,2,1,274,343,2148724176,Perkotaan,Semarang,Dekat tempat ibadah,2
+327,1,2,2,452,213,263411432,Perkotaan,Pekalongan,Akses jalan lebar,3
+328,6,3,3,393,385,434305897,Perkotaan,Yogyakarta,Dekat tempat ibadah,1
+329,4,3,3,229,383,2260652439,Perkotaan,Magelang,Dekat tempat ibadah,2
+330,5,3,3,78,83,3139841282,Pedesaan,Surakarta,Dekat transportasi umum,3
+331,1,1,1,212,222,4630981230,Perkotaan,Kudus,Dekat tempat ibadah,5
+332,3,3,3,407,181,1287650361,Perkotaan,Kudus,Dekat tempat ibadah,5
+333,2,2,1,123,273,3492033127,Perkotaan,Wonosobo,Dekat rumah sakit,1
+334,6,4,3,121,368,4197451645,Pedesaan,Magelang,Dekat tempat ibadah,4
+335,1,4,1,252,227,2897367231,Perkotaan,Purwokerto,Dekat pasar,3
+336,4,4,1,67,65,1028737763,Pedesaan,Surakarta,Dekat pasar,5
+337,6,1,1,337,88,4478799167,Pinggiran,Wonosobo,Dekat rumah sakit,4
+338,1,4,2,333,377,3676673582,Perkotaan,Wonosobo,Dekat transportasi umum,4
+339,3,4,2,131,344,1817906345,Pinggiran,Pekalongan,Dekat transportasi umum,1
+340,4,4,3,331,128,612067125,Pedesaan,Magelang,Dekat rumah sakit,1
+341,2,4,1,338,396,1494711509,Pinggiran,Klaten,Dekat pasar,2
+342,6,2,3,149,363,4852679252,Pinggiran,Sleman,Dekat tempat ibadah,5
+343,3,2,2,248,391,279513860,Perkotaan,Semarang,Dekat pasar,1
+344,1,2,1,199,316,250926931,Pinggiran,Kudus,Akses jalan lebar,4
+345,5,1,1,101,237,3608306605,Pinggiran,Klaten,Akses jalan lebar,3
+346,6,1,2,297,268,993664617,Perkotaan,Tegal,Dekat transportasi umum,5
+347,5,3,1,119,123,289058351,Pinggiran,Purwokerto,Dekat pasar,3
+348,4,3,1,283,225,1825224750,Pinggiran,Purwokerto,Dekat tempat ibadah,3
+349,3,1,2,280,300,3797777873,Pedesaan,Purwokerto,Dekat pasar,4
+350,1,3,1,198,355,4187049545,Perkotaan,Bantul,Dekat pasar,3
+351,1,4,2,343,393,3253085510,Perkotaan,Wonosobo,Dekat transportasi umum,2
+352,5,4,3,400,318,4906944251,Perkotaan,Klaten,Dekat pasar,4
+353,5,1,3,383,93,1910114917,Perkotaan,Kudus,Dekat rumah sakit,4
+354,5,3,2,64,82,2803148314,Pedesaan,Yogyakarta,Dekat pasar,4
+355,3,3,2,392,50,3860015698,Perkotaan,Purwokerto,Dekat tempat ibadah,2
+356,4,1,3,251,361,1244139805,Pedesaan,Purwokerto,Dekat transportasi umum,2
+357,4,2,1,187,265,3272221401,Pedesaan,Semarang,Akses jalan lebar,4
+358,4,1,1,494,231,1683574707,Pedesaan,Klaten,Akses jalan lebar,2
+359,4,2,2,179,123,3647669997,Pedesaan,Surakarta,Dekat tempat ibadah,2
+360,6,2,2,394,381,4753898439,Pinggiran,Klaten,Dekat pasar,4
+361,1,2,1,280,228,2075069357,Pinggiran,Yogyakarta,Dekat transportasi umum,3
+362,6,3,3,98,127,4801255349,Pinggiran,Tegal,Akses jalan lebar,4
+363,5,2,2,177,145,3481772416,Pedesaan,Yogyakarta,Dekat tempat ibadah,2
+364,2,3,1,397,88,3925849352,Perkotaan,Magelang,Dekat transportasi umum,5
+365,1,4,1,311,254,1065421761,Pedesaan,Yogyakarta,Dekat tempat ibadah,4
+366,2,2,2,105,198,2062053424,Pinggiran,Surakarta,Dekat pasar,1
+367,6,4,3,214,318,2360793432,Pedesaan,Yogyakarta,Dekat pasar,4
+368,1,4,2,60,53,1350233075,Perkotaan,Magelang,Dekat rumah sakit,5
+369,5,1,1,317,53,1740556396,Pinggiran,Klaten,Dekat rumah sakit,5
+370,6,3,1,311,145,549045628,Pinggiran,Bantul,Akses jalan lebar,4
+371,4,2,1,361,309,4088399466,Perkotaan,Purwokerto,Dekat tempat ibadah,5
+372,6,2,1,357,266,3492253722,Pedesaan,Sleman,Dekat pasar,5
+373,4,2,3,291,60,2280403723,Pedesaan,Wonosobo,Dekat rumah sakit,5
+374,5,4,1,419,198,671191212,Perkotaan,Bantul,Dekat transportasi umum,3
+375,2,4,3,492,377,3950691550,Pedesaan,Klaten,Dekat tempat ibadah,3
+376,2,1,1,357,100,4063672565,Pedesaan,Purwokerto,Dekat tempat ibadah,1
+377,3,2,2,258,398,3041867056,Perkotaan,Wonosobo,Dekat rumah sakit,5
+378,1,2,3,51,227,1120548732,Perkotaan,Surakarta,Dekat transportasi umum,5
+379,6,1,1,290,313,1143298411,Perkotaan,Yogyakarta,Dekat pasar,2
+380,1,1,2,312,79,2511603822,Pedesaan,Tegal,Akses jalan lebar,2
+381,6,2,3,149,142,2914195954,Pinggiran,Purwokerto,Dekat tempat ibadah,3
+382,1,4,2,327,56,3974027960,Perkotaan,Semarang,Dekat pasar,2
+383,6,3,3,277,207,4374757313,Pinggiran,Yogyakarta,Akses jalan lebar,1
+384,3,4,1,69,154,4019213168,Perkotaan,Klaten,Dekat pasar,2
+385,1,4,2,425,157,2445669606,Pinggiran,Sleman,Dekat rumah sakit,2
+386,2,1,2,437,246,4790815388,Perkotaan,Sleman,Dekat rumah sakit,5
+387,4,1,2,212,182,2850495045,Perkotaan,Tegal,Akses jalan lebar,5
+388,5,3,3,453,63,4117267147,Pinggiran,Surakarta,Dekat rumah sakit,5
+389,4,4,3,263,69,2588009705,Perkotaan,Bantul,Akses jalan lebar,1
+390,1,4,2,157,260,1317071527,Pedesaan,Purwokerto,Dekat tempat ibadah,5
+391,5,4,2,419,101,1032499576,Perkotaan,Klaten,Dekat transportasi umum,5
+392,3,3,2,310,203,3817953112,Perkotaan,Surakarta,Dekat tempat ibadah,1
+393,1,4,3,374,296,1438746809,Pedesaan,Surakarta,Dekat tempat ibadah,2
+394,3,3,1,221,228,4827858454,Pedesaan,Kudus,Dekat pasar,3
+395,6,4,1,475,260,3669950047,Pinggiran,Semarang,Dekat pasar,1
+396,4,2,3,214,246,3047849393,Perkotaan,Semarang,Dekat tempat ibadah,4
+397,6,2,2,59,347,4619918054,Perkotaan,Wonosobo,Dekat rumah sakit,1
+398,2,3,3,331,187,4749803687,Pedesaan,Pekalongan,Dekat tempat ibadah,3
+399,1,4,3,210,389,228908544,Pedesaan,Pekalongan,Dekat rumah sakit,2
+400,3,2,3,201,122,3458827208,Pedesaan,Purwokerto,Dekat rumah sakit,2
+401,4,1,1,111,188,2418321126,Pinggiran,Yogyakarta,Dekat tempat ibadah,3
+402,2,4,1,204,374,3269541169,Pinggiran,Magelang,Dekat tempat ibadah,5
+403,6,2,3,211,354,3466517766,Pedesaan,Purwokerto,Dekat tempat ibadah,2
+404,2,1,3,356,293,4459146149,Pedesaan,Pekalongan,Dekat tempat ibadah,3
+405,1,4,2,188,391,1267862918,Pinggiran,Surakarta,Dekat tempat ibadah,4
+406,6,3,2,491,119,1368965163,Pinggiran,Klaten,Dekat rumah sakit,3
+407,3,3,2,66,271,4501576520,Perkotaan,Magelang,Dekat transportasi umum,5
+408,1,4,2,484,349,543124473,Pinggiran,Tegal,Akses jalan lebar,2
+409,6,3,1,356,312,3405065354,Pinggiran,Yogyakarta,Dekat pasar,3
+410,2,4,1,183,287,4806790100,Pinggiran,Magelang,Dekat transportasi umum,4
+411,2,2,1,273,225,1698760906,Pedesaan,Wonosobo,Akses jalan lebar,1
+412,6,3,2,194,284,3555339672,Pedesaan,Kudus,Dekat pasar,5
+413,1,2,1,178,164,2840151207,Pinggiran,Purwokerto,Dekat rumah sakit,4
+414,4,3,2,220,124,4416520610,Pinggiran,Bantul,Dekat pasar,1
+415,2,3,3,477,258,4415783083,Pinggiran,Yogyakarta,Dekat transportasi umum,3
+416,6,3,1,390,122,597431066,Pedesaan,Kudus,Dekat transportasi umum,5
+417,5,3,3,276,298,1684236952,Pedesaan,Tegal,Dekat rumah sakit,3
+418,3,4,3,119,189,1566736777,Pinggiran,Tegal,Akses jalan lebar,2
+419,3,3,2,398,325,2641764243,Pinggiran,Surakarta,Dekat pasar,5
+420,6,4,3,92,387,4577080348,Pedesaan,Kudus,Akses jalan lebar,4
+421,3,1,3,461,271,766633596,Pedesaan,Yogyakarta,Dekat pasar,2
+422,5,4,3,138,68,1616851468,Pinggiran,Kudus,Dekat transportasi umum,3
+423,4,4,1,53,119,2353959555,Pedesaan,Magelang,Dekat tempat ibadah,1
+424,6,1,3,434,75,3159343096,Pedesaan,Surakarta,Dekat rumah sakit,2
+425,6,2,3,301,343,4769108239,Pinggiran,Bantul,Dekat tempat ibadah,1
+426,2,3,1,452,370,4023648902,Pinggiran,Sleman,Akses jalan lebar,4
+427,6,3,3,100,256,1441189858,Pedesaan,Semarang,Akses jalan lebar,4
+428,1,2,3,160,346,3861930507,Pinggiran,Magelang,Dekat pasar,2
+429,5,1,2,255,166,979527400,Pedesaan,Purwokerto,Dekat pasar,1
+430,3,1,1,381,242,4362991600,Perkotaan,Semarang,Dekat rumah sakit,5
+431,2,1,3,51,77,2054801551,Perkotaan,Pekalongan,Dekat pasar,5
+432,2,1,2,266,264,2365037569,Pedesaan,Klaten,Dekat rumah sakit,1
+433,4,3,1,417,170,4344182597,Perkotaan,Magelang,Dekat rumah sakit,5
+434,5,1,2,228,281,492720823,Pinggiran,Sleman,Dekat transportasi umum,2
+435,3,4,3,417,328,3112612449,Pinggiran,Surakarta,Dekat rumah sakit,5
+436,6,1,3,206,145,232206616,Pedesaan,Bantul,Dekat pasar,3
+437,4,3,3,408,314,3142701976,Pinggiran,Wonosobo,Dekat tempat ibadah,4
+438,1,1,2,433,55,2551049401,Pinggiran,Magelang,Dekat pasar,2
+439,2,4,1,237,291,4326396738,Pedesaan,Pekalongan,Dekat rumah sakit,4
+440,2,4,1,342,225,1500632986,Perkotaan,Magelang,Dekat pasar,1
+441,1,1,3,224,146,4623727597,Pedesaan,Bantul,Dekat pasar,4
+442,5,1,2,330,360,2940267154,Pedesaan,Surakarta,Dekat rumah sakit,2
+443,2,4,1,225,58,1185207701,Pinggiran,Magelang,Dekat pasar,2
+444,6,2,1,404,256,1592862889,Pedesaan,Bantul,Dekat transportasi umum,5
+445,6,3,3,122,328,3441013896,Perkotaan,Semarang,Akses jalan lebar,5
+446,3,2,3,249,370,4539834532,Pinggiran,Magelang,Dekat rumah sakit,2
+447,4,3,2,65,139,1237433586,Perkotaan,Magelang,Dekat pasar,4
+448,5,2,3,253,224,1818729636,Perkotaan,Magelang,Dekat pasar,4
+449,1,3,1,262,90,2770974417,Pinggiran,Sleman,Dekat transportasi umum,2
+450,5,2,1,198,113,4420642317,Pedesaan,Sleman,Dekat pasar,2
+451,1,3,3,388,377,3033949635,Perkotaan,Pekalongan,Akses jalan lebar,5
+452,3,1,3,306,363,2157020805,Pedesaan,Pekalongan,Dekat rumah sakit,4
+453,4,3,1,81,232,4175793298,Pinggiran,Pekalongan,Akses jalan lebar,2
+454,4,3,3,367,320,2835808020,Pedesaan,Kudus,Dekat transportasi umum,3
+455,3,2,1,263,123,711936554,Perkotaan,Pekalongan,Akses jalan lebar,3
+456,4,4,1,200,378,1781785754,Pedesaan,Semarang,Dekat transportasi umum,3
+457,4,2,3,163,123,4023614142,Perkotaan,Wonosobo,Dekat pasar,2
+458,6,2,2,207,89,1667239363,Perkotaan,Klaten,Dekat transportasi umum,4
+459,6,2,1,215,111,4503969998,Perkotaan,Yogyakarta,Akses jalan lebar,1
+460,5,1,1,497,352,4535449832,Pinggiran,Yogyakarta,Dekat transportasi umum,5
+461,6,2,2,292,249,547421339,Perkotaan,Pekalongan,Dekat tempat ibadah,2
+462,3,3,3,423,237,4156285317,Pedesaan,Magelang,Akses jalan lebar,5
+463,5,1,2,265,367,643022499,Pedesaan,Sleman,Akses jalan lebar,3
+464,1,3,3,249,367,1272340490,Pedesaan,Magelang,Dekat pasar,5
+465,3,1,1,493,134,3066106393,Pedesaan,Klaten,Dekat transportasi umum,1
+466,6,4,1,439,378,3615592370,Pedesaan,Pekalongan,Akses jalan lebar,1
+467,3,4,1,329,351,2566477145,Pinggiran,Purwokerto,Dekat tempat ibadah,1
+468,5,4,3,91,176,2876398261,Pedesaan,Wonosobo,Dekat transportasi umum,5
+469,1,1,2,402,382,140300064,Pinggiran,Yogyakarta,Dekat transportasi umum,3
+470,1,3,3,426,78,4048474233,Perkotaan,Sleman,Dekat tempat ibadah,3
+471,6,2,3,101,344,1448715262,Perkotaan,Tegal,Dekat transportasi umum,1
+472,2,2,2,101,216,3526597542,Pedesaan,Semarang,Dekat pasar,1
+473,1,1,3,284,188,2323041094,Pinggiran,Kudus,Dekat pasar,4
+474,1,3,3,362,74,2370892289,Perkotaan,Surakarta,Dekat transportasi umum,2
+475,3,1,2,248,335,1860690221,Pedesaan,Wonosobo,Akses jalan lebar,2
+476,1,1,3,288,345,248100763,Pinggiran,Wonosobo,Dekat rumah sakit,5
+477,3,1,3,162,71,4075051515,Pinggiran,Sleman,Dekat transportasi umum,2
+478,5,3,1,317,321,4781796563,Perkotaan,Yogyakarta,Dekat transportasi umum,2
+479,3,1,2,209,153,569896554,Pinggiran,Klaten,Dekat pasar,1
+480,4,1,1,364,87,1391210694,Perkotaan,Surakarta,Dekat rumah sakit,5
+481,1,2,3,227,67,3795455839,Perkotaan,Klaten,Dekat tempat ibadah,3
+482,4,4,2,420,158,3625507248,Pinggiran,Surakarta,Dekat transportasi umum,4
+483,3,3,3,459,139,4769140491,Pedesaan,Surakarta,Dekat transportasi umum,3
+484,1,2,3,422,57,3989475476,Pinggiran,Surakarta,Akses jalan lebar,2
+485,2,1,2,494,359,257721290,Perkotaan,Magelang,Dekat tempat ibadah,4
+486,1,2,3,318,80,4644118760,Perkotaan,Klaten,Akses jalan lebar,5
+487,2,3,3,76,294,4527376558,Perkotaan,Klaten,Dekat rumah sakit,4
+488,6,1,2,395,303,940453645,Pedesaan,Bantul,Dekat pasar,3
+489,6,4,1,118,311,1060128274,Perkotaan,Yogyakarta,Dekat pasar,1
+490,2,1,2,407,112,2765633627,Pedesaan,Pekalongan,Dekat rumah sakit,4
+491,4,4,2,168,229,4316798318,Perkotaan,Yogyakarta,Dekat pasar,4
+492,3,4,3,490,53,3854387983,Pedesaan,Pekalongan,Akses jalan lebar,3
+493,1,4,2,75,52,2697880610,Pedesaan,Pekalongan,Dekat pasar,1
+494,5,3,1,131,206,3782302647,Perkotaan,Tegal,Dekat tempat ibadah,4
+495,3,2,3,73,349,2097375576,Pedesaan,Sleman,Akses jalan lebar,1
+496,4,1,1,130,242,3082834880,Pedesaan,Surakarta,Dekat rumah sakit,1
+497,1,1,3,195,204,3027155498,Perkotaan,Bantul,Dekat transportasi umum,3
+498,3,2,1,81,270,2292827871,Pedesaan,Semarang,Akses jalan lebar,4
+499,3,3,2,403,335,4199415389,Pedesaan,Semarang,Dekat transportasi umum,1
+500,6,3,1,340,360,1584417883,Perkotaan,Magelang,Akses jalan lebar,1

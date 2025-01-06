@@ -13,7 +13,7 @@ st.write("Aplikasi ini membantu Anda menemukan rumah berdasarkan kriteria terten
 def load_data():
     """Load and preprocess the dataset"""
     try:
-        dataset = pd.read_csv('updated_dataset_with_harga_reordered.csv')
+        dataset = pd.read_csv('dataset_rumah_jateng_diy.csv')
         return dataset
     except FileNotFoundError:
         st.error("File dataset tidak ditemukan. Pastikan file CSV tersedia.")

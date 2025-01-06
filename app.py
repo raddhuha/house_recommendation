@@ -13,7 +13,7 @@ st.write("Aplikasi ini membantu Anda menemukan rumah berdasarkan kriteria terten
 def load_data():
     """Load and preprocess the dataset"""
     try:
-        dataset = pd.read_csv('dataset_rumah_jateng_diy.csv')
+        dataset = pd.read_csv('updated_dataset_with_harga_reordered.csv')
         return dataset
     except FileNotFoundError:
         st.error("File dataset tidak ditemukan. Pastikan file CSV tersedia.")
@@ -67,8 +67,8 @@ def get_recommendations(data, user_input, use_kriteria):
     
     # aplikasikan KMeans clustering
     n_clusters = min(5, len(data_for_clustering))
-    kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
-    data_for_clustering['cluster'] = kmeans.fit_predict(data_for_clustering.drop('cluster', axis=1, errors='ignore'))
+    kmeans = KMeans(n_clusters=n_clusters, random_state=1000, n_init=10)
+    clusters = kmeans.fit_predict(data_for_clustering)
     
     # user input
     user_data = pd.DataFrame([user_input])
@@ -85,14 +85,34 @@ def get_recommendations(data, user_input, use_kriteria):
     
     # prediksi cluster user
     user_cluster = kmeans.predict(user_data_scaled)[0]
+    # Get houses from the same cluster
+    cluster_mask = (clusters == user_cluster)
+    recommendations = data[cluster_mask].copy()
+
+    """Calculate similarity score within the cluster"""
+    # Numeric features similarity
+    feature_weights = {
+        'harga': 0.3,
+        'jumlah_kamar_tidur': 0.15,
+        'jumlah_kamar_mandi': 0.15,
+        'jumlah_lantai': 0.1,
+        'luas_lahan': 0.15,
+        'luas_bangunan': 0.15
+    }
     
-    # rekomenasi rumah berdasarkan cluster user
-    recommendations = data[data_for_clustering['cluster'] == user_cluster]
-    
-    # urutkan berdasarkan harga
-    if use_kriteria:
-        recommendations['price_diff'] = abs(recommendations['harga'].astype(float) - float(user_input['harga']))
-        recommendations = recommendations.sort_values('price_diff').drop('price_diff', axis=1)
+    def calculate_similarity(row):
+        score = 0
+        for feature, weight in feature_weights.items():
+            if feature in row and feature in user_input:
+                max_val = data[feature].max()
+                min_val = data[feature].min()
+                range_val = max_val - min_val if max_val != min_val else 1
+                normalized_diff = abs(float(row[feature]) - float(user_input[feature])) / range_val
+                score += (1 - normalized_diff) * weight
+        return score
+    recommendations['similarity_score'] = recommendations.apply(calculate_similarity, axis=1)
+    recommendations = recommendations.sort_values('similarity_score', ascending=False)
+    recommendations = recommendations.drop('similarity_score', axis=1)
     
     return recommendations
 
@@ -109,8 +129,8 @@ def main():
     
     # Budget input
     st.subheader("Masukkan Budget")
-    budget_min = st.number_input("Budget minimum (dalam juta):", min_value=0, step=1)
-    budget_max = st.number_input("Budget maksimum (dalam juta):", min_value=0, step=1)
+    
+    budget_max = st.number_input("Budget (dalam juta):", min_value=0, step=1)
     
     # tambahan criteria
     use_kriteria = st.checkbox("Gunakan kriteria tambahan")
@@ -141,7 +161,7 @@ def main():
     if st.button("Cek Ketersediaan"):
         # Create filter conditions
         conditions = (
-            (processed_data["harga"].astype(float) >= budget_min * 1_000_000) &
+            
             (processed_data["harga"].astype(float) <= budget_max * 1_000_000)
         )
         
@@ -185,7 +205,7 @@ def main():
             
             # user input
             user_input = {
-                "harga": budget_min * 1_000_000,
+                "harga": budget_max * 1_000_000,
                 "jumlah_kamar_tidur": kamar_tidur[0] if use_kriteria else 0,
                 "jumlah_kamar_mandi": kamar_mandi[0] if use_kriteria else 0,
                 "jumlah_lantai": jumlah_lantai[0] if use_kriteria else 1,

@@ -117,11 +117,11 @@ def main():
     
     if use_kriteria:
         with st.sidebar:
-            kamar_tidur = st.slider("Jumlah kamar tidur:", 0, 10, (0, 10))
-            kamar_mandi = st.slider("Jumlah kamar mandi:", 0, 10, (0, 10))
-            jumlah_lantai = st.slider("Jumlah lantai:", 1, 5, (1, 5))
-            luas_lahan = st.slider("Luas lahan (m2):", 0, 1000, (0, 1000))
-            luas_bangunan = st.slider("Luas bangunan (m2):", 0, 1000, (0, 1000))
+            kamar_tidur = st.slider("Jumlah kamar tidur:", 0, 6, (0, 6))
+            kamar_mandi = st.slider("Jumlah kamar mandi:", 0, 6, (0, 6))
+            jumlah_lantai = st.slider("Jumlah lantai:", 1, 3, (1, 3))
+            luas_lahan = st.slider("Luas lahan (m2):", 0, 500, (0, 500))
+            luas_bangunan = st.slider("Luas bangunan (m2):", 0, 500, (0, 500))
             
             lokasi_sekitar = st.selectbox(
                 "Lokasi sekitar:",

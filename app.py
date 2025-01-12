@@ -1,10 +1,12 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.cluster import KMeans
+from sklearn.decomposition import PCA
 import plotly.express as px
 
-# atur judul halaman dan dekripsi
+# Set judul halaman dan dekripsi
 st.set_page_config(page_title="Sistem Rekomendasi Rumah", layout="wide")
 st.title("Sistem Rekomendasi Ketersediaan Rumah")
 st.write("Aplikasi ini membantu Anda menemukan rumah berdasarkan kriteria tertentu.")
@@ -47,75 +49,101 @@ def preprocess_data(data):
     return processed_data
 
 def get_recommendations(data, user_input, use_kriteria):
-    """Persiapan data untuk clustering dan rekomendasi"""
-    # persiapan clustering
+    """Get house recommendations using PCA, K-Means clustering and similarity scoring"""
+    # Prepare data for clustering
     data_for_clustering = data.copy()
     
-    # inisialisasi label encoders dan kolom kategori
+    # Initialize encoders and scaler
     label_encoders = {}
     categorical_columns = data_for_clustering.select_dtypes(include=['object']).columns
     
-    # emcode data kategori
+    # Encode categorical features
     for col in categorical_columns:
         label_encoders[col] = LabelEncoder()
         data_for_clustering[col] = label_encoders[col].fit_transform(data_for_clustering[col].astype(str))
     
-    # scaling data numerik
+    # Scale numerical features
     numerical_columns = data_for_clustering.select_dtypes(include=['float64', 'int64']).columns
     scaler = MinMaxScaler()
     data_for_clustering[numerical_columns] = scaler.fit_transform(data_for_clustering[numerical_columns])
     
-    # aplikasikan KMeans clustering
-    n_clusters = min(5, len(data_for_clustering))
-    kmeans = KMeans(n_clusters=n_clusters, random_state=1000, n_init=10)
-    clusters = kmeans.fit_predict(data_for_clustering)
+    # Apply PCA
+    pca = PCA(n_components=2)
+    features_pca = pca.fit_transform(data_for_clustering)
     
-    # user input
+    # Create DataFrame with PCA results
+    pca_df = pd.DataFrame(
+        features_pca,
+        columns=['Principal Component 1', 'Principal Component 2']
+    )
+    
+    # Apply K-Means clustering on PCA results
+    n_clusters = min(9, len(data_for_clustering))
+    kmeans = KMeans(n_clusters=n_clusters, random_state=1000, n_init=10)
+    clusters = kmeans.fit_predict(features_pca)
+    
+    # Visualize clustering results on PCA dimensions
+    pca_df['Cluster'] = clusters
+    
+    
+    # Prepare user input
     user_data = pd.DataFrame([user_input])
     
-    # transform user input
+    # Transform user input
     for col in categorical_columns:
         if col in user_data.columns and user_input[col]:
             user_data[col] = label_encoders[col].transform([user_input[col]])
         else:
             user_data[col] = 0
     
-    # scaling user input
+    # Scale user input
     user_data_scaled = scaler.transform(user_data[numerical_columns])
     
-    # prediksi cluster user
-    user_cluster = kmeans.predict(user_data_scaled)[0]
+    # Transform user input using PCA
+    user_pca = pca.transform(user_data_scaled)
+    
+    # Get user's cluster
+    user_cluster = kmeans.predict(user_pca)[0]
+    st.write(f"Input Anda termasuk dalam Cluster {user_cluster}")
+    
     # Get houses from the same cluster
     cluster_mask = (clusters == user_cluster)
     recommendations = data[cluster_mask].copy()
-
-    """Calculate similarity score within the cluster"""
-    # Numeric features similarity
+    
+    # Calculate similarity scores within the cluster
     feature_weights = {
         'harga': 0.3,
+        'lokasi_rumah': 0.2,    
+        'lokasi_sekitar': 0.1,
+        'fasilitas_sekitar': 0.05,
+        'luas_bangunan': 0.05,
+        'luas_lahan': 0.05,
         'jumlah_kamar_tidur': 0.15,
         'jumlah_kamar_mandi': 0.15,
-        'jumlah_lantai': 0.1,
-        'luas_lahan': 0.15,
-        'luas_bangunan': 0.15
+        'jumlah_lantai': 0.1
     }
     
     def calculate_similarity(row):
         score = 0
         for feature, weight in feature_weights.items():
             if feature in row and feature in user_input:
-                max_val = data[feature].max()
-                min_val = data[feature].min()
-                range_val = max_val - min_val if max_val != min_val else 1
-                normalized_diff = abs(float(row[feature]) - float(user_input[feature])) / range_val
-                score += (1 - normalized_diff) * weight
+                if feature in categorical_columns:
+                    score += weight if str(row[feature]) == str(user_input[feature]) else 0
+                else:
+                    max_val = data[feature].max()
+                    min_val = data[feature].min()
+                    range_val = max_val - min_val if max_val != min_val else 1
+                    normalized_diff = abs(float(row[feature]) - float(user_input[feature])) / range_val
+                    score += (1 - normalized_diff) * weight
         return score
+    
     recommendations['similarity_score'] = recommendations.apply(calculate_similarity, axis=1)
     recommendations = recommendations.sort_values('similarity_score', ascending=False)
+    recommendations['Persentase_Kemiripan'] = (recommendations['similarity_score'] / sum(feature_weights.values()) * 100).round(2)
     recommendations = recommendations.drop('similarity_score', axis=1)
     
-    return recommendations
-
+    return recommendations, pca_df, clusters
+    
 def main():
     # load data
     data = load_data()
@@ -129,8 +157,7 @@ def main():
     
     # Budget input
     st.subheader("Masukkan Budget")
-    
-    budget_max = st.number_input("Budget (dalam juta):", min_value=0, step=1)
+    budget = st.number_input("Budget (dalam juta):", min_value=0, step=1)
     
     # tambahan criteria
     use_kriteria = st.checkbox("Gunakan kriteria tambahan")
@@ -161,8 +188,7 @@ def main():
     if st.button("Cek Ketersediaan"):
         # Create filter conditions
         conditions = (
-            
-            (processed_data["harga"].astype(float) <= budget_max * 1_000_000)
+            (processed_data["harga"].astype(float) <= budget * 1_000_000)
         )
         
         if use_kriteria:
@@ -201,11 +227,10 @@ def main():
             
         else:
             st.warning("Tidak ditemukan rumah yang sesuai dengan kriteria Anda.")
-            st.write("Berikut adalah rekomendasi rumah dengan kriteria yang mirip:")
+            st.write("Berikut adalah rekomendasi rumah dengan kriteria yang mirip (dari cluster yang sama):")
             
-            # user input
             user_input = {
-                "harga": budget_max * 1_000_000,
+                "harga": budget * 1_000_000,
                 "jumlah_kamar_tidur": kamar_tidur[0] if use_kriteria else 0,
                 "jumlah_kamar_mandi": kamar_mandi[0] if use_kriteria else 0,
                 "jumlah_lantai": jumlah_lantai[0] if use_kriteria else 1,
@@ -216,19 +241,36 @@ def main():
                 "fasilitas_sekitar": fasilitas_sekitar if fasilitas_sekitar else processed_data["fasilitas_sekitar"].mode()[0]
             }
             
-            # mendapatkan rekomendasi
-            recommendations = get_recommendations(processed_data, user_input, use_kriteria)
+            recommendations, pca_df, clusters = get_recommendations(processed_data, user_input, use_kriteria)
             
-            # menunjukkan 10 rekomendasi
-            st.dataframe(recommendations.head(10))
-            
-            # visualisasi rekomendasi
-            fig = px.scatter(recommendations.head(10), 
-                           x="harga", 
-                           y="luas_bangunan",
-                           color="lokasi_rumah",
-                           title="Rekomendasi Rumah Berdasarkan Harga dan Luas Bangunan")
-            st.plotly_chart(fig)
+            if not recommendations.empty:
+                st.subheader("Top 10 Rekomendasi")
+                display_cols = ['jumlah_kamar_tidur', 'jumlah_kamar_mandi', 'jumlah_lantai', 'luas_lahan','luas_bangunan', 
+                                'harga', 'lokasi_sekitar', 'lokasi_rumah', 'fasilitas_sekitar', 'Persentase_Kemiripan']
+                st.dataframe(recommendations[display_cols].head(10))
+                
+                # Visualisasi rekomendasi pada dimensi PCA
+                pca_recommendations = pca_df[pca_df.index.isin(recommendations.head(10).index)]
+                fig = px.scatter(
+                    pca_df,
+                    x='Principal Component 1',
+                    y='Principal Component 2',
+                    color='Cluster',
+                    title='Posisi Cluster Rekomendasi Rumah'
+                )
+                
+                # Highlight recommended houses
+                fig.add_scatter(
+                    x=pca_recommendations['Principal Component 1'],
+                    y=pca_recommendations['Principal Component 2'],
+                    mode='markers',
+                    marker=dict(size=15, symbol='star', color='yellow'),
+                    name='Rekomendasi'
+                )
+                
+                st.plotly_chart(fig)
+            else:
+                st.error("Tidak dapat menemukan rekomendasi yang sesuai.")
 
 if __name__ == "__main__":
     main()

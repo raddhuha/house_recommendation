@@ -85,7 +85,6 @@ def get_recommendations(data, user_input, use_kriteria):
     # Visualize clustering results on PCA dimensions
     pca_df['Cluster'] = clusters
     
-    
     # Prepare user input
     user_data = pd.DataFrame([user_input])
     
@@ -162,14 +161,12 @@ def main():
     # tambahan criteria
     use_kriteria = st.checkbox("Gunakan kriteria tambahan")
     
+    lokasi_sekitar = ""
+    lokasi_rumah = ""
+    fasilitas_sekitar = ""
+    
     if use_kriteria:
         with st.sidebar:
-            kamar_tidur = st.slider("Jumlah kamar tidur:", 0, 6, (0, 6))
-            kamar_mandi = st.slider("Jumlah kamar mandi:", 0, 6, (0, 6))
-            jumlah_lantai = st.slider("Jumlah lantai:", 1, 3, (1, 3))
-            luas_lahan = st.slider("Luas lahan (m2):", 0, 500, (0, 500))
-            luas_bangunan = st.slider("Luas bangunan (m2):", 0, 500, (0, 500))
-            
             lokasi_sekitar = st.selectbox(
                 "Lokasi sekitar:",
                 [""] + sorted(processed_data['lokasi_sekitar'].unique().tolist())
@@ -184,8 +181,13 @@ def main():
                 "Fasilitas sekitar:",
                 [""] + sorted(processed_data['fasilitas_sekitar'].unique().tolist())
             )
+            kamar_tidur = st.slider("Jumlah kamar tidur:", 0, 6, (0, 6))
+            kamar_mandi = st.slider("Jumlah kamar mandi:", 0, 6, (0, 6))
+            jumlah_lantai = st.slider("Jumlah lantai:", 1, 3, (1, 3))
+            luas_lahan = st.slider("Luas lahan (m2):", 0, 500, (0, 500))
+            luas_bangunan = st.slider("Luas bangunan (m2):", 0, 500, (0, 500))
     
-    if st.button("Cek Ketersediaan"):
+    if st.button("Cek Rekomendasi"):
         # Create filter conditions
         conditions = (
             (processed_data["harga"].astype(float) <= budget * 1_000_000)
@@ -218,12 +220,50 @@ def main():
         hasil = processed_data[conditions]
         
         if not hasil.empty:
-            st.success(f"Ditemukan {len(hasil)} rumah yang sesuai dengan kriteria Anda.")
-            st.dataframe(hasil)
+            st.success(f"Rekomendasi rumah berdasarkan kriteria Anda.")
+            st.write("Berikut adalah rekomendasi rumah dengan kriteria yang mirip (dari cluster yang sama):")
+            user_input = {
+                "harga": budget * 1_000_000,
+                "jumlah_kamar_tidur": kamar_tidur[0] if use_kriteria else 0,
+                "jumlah_kamar_mandi": kamar_mandi[0] if use_kriteria else 0,
+                "jumlah_lantai": jumlah_lantai[0] if use_kriteria else 1,
+                "luas_lahan": luas_lahan[0] if use_kriteria else 0,
+                "luas_bangunan": luas_bangunan[0] if use_kriteria else 0,
+                "lokasi_sekitar": lokasi_sekitar if lokasi_sekitar else processed_data["lokasi_sekitar"].mode()[0],
+                "lokasi_rumah": lokasi_rumah if lokasi_rumah else processed_data["lokasi_rumah"].mode()[0],
+                "fasilitas_sekitar": fasilitas_sekitar if fasilitas_sekitar else processed_data["fasilitas_sekitar"].mode()[0]
+            }
             
-            # visualisasi distribusi harga
-            fig = px.histogram(hasil, x="harga", title="Distribusi Harga Rumah yang Sesuai")
-            st.plotly_chart(fig)
+            recommendations, pca_df, clusters = get_recommendations(processed_data, user_input, use_kriteria)
+            
+            if not recommendations.empty:
+                st.subheader("Top 10 Rekomendasi")
+                display_cols = ['Persentase_Kemiripan', 'harga', 'lokasi_rumah', 'lokasi_sekitar', 'jumlah_kamar_tidur', 'jumlah_kamar_mandi', 
+                                'jumlah_lantai', 'luas_lahan', 'luas_bangunan', 'fasilitas_sekitar']
+                st.dataframe(recommendations[display_cols].head(10))
+                
+                # Visualisasi rekomendasi pada dimensi PCA
+                pca_recommendations = pca_df[pca_df.index.isin(recommendations.head(10).index)]
+                fig = px.scatter(
+                    pca_df,
+                    x='Principal Component 1',
+                    y='Principal Component 2',
+                    color='Cluster',
+                    title='Posisi Cluster Rekomendasi Rumah'
+                )
+                
+                # Highlight recommended houses
+                fig.add_scatter(
+                    x=pca_recommendations['Principal Component 1'],
+                    y=pca_recommendations['Principal Component 2'],
+                    mode='markers',
+                    marker=dict(size=15, symbol='star', color='yellow'),
+                    name='Rekomendasi'
+                )
+                
+                st.plotly_chart(fig)
+            else:
+                st.error("Tidak dapat menemukan rekomendasi yang sesuai.")
             
         else:
             st.warning("Tidak ditemukan rumah yang sesuai dengan kriteria Anda.")
@@ -245,8 +285,8 @@ def main():
             
             if not recommendations.empty:
                 st.subheader("Top 10 Rekomendasi")
-                display_cols = ['jumlah_kamar_tidur', 'jumlah_kamar_mandi', 'jumlah_lantai', 'luas_lahan','luas_bangunan', 
-                                'harga', 'lokasi_sekitar', 'lokasi_rumah', 'fasilitas_sekitar', 'Persentase_Kemiripan']
+                display_cols = ['Persentase_Kemiripan', 'harga', 'lokasi_rumah', 'lokasi_sekitar', 'jumlah_kamar_tidur', 'jumlah_kamar_mandi', 
+                                'jumlah_lantai', 'luas_lahan', 'luas_bangunan', 'fasilitas_sekitar']
                 st.dataframe(recommendations[display_cols].head(10))
                 
                 # Visualisasi rekomendasi pada dimensi PCA
